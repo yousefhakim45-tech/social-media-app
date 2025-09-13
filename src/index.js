@@ -1,12 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-/* import LoginForm from "./login";
-import App from "./social_media"; */
-/* import Portfolio from "./portfolio"; */
-import Portfolio from "./portfolio";
+import LoginForm from "./login";
+import App from "./social_media"; 
 // Define your routes here
-/* function Index() {
+function Index() {
   return (
     <BrowserRouter>
       <Routes>
@@ -15,8 +13,8 @@ import Portfolio from "./portfolio";
       </Routes>
     </BrowserRouter>
   );
-} */
+} 
 
 // ✅ Mount it to the DOM
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Portfolio />);
+root.render(<Index />);
