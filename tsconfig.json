@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Migration-Friendly Settings */
+    "allowJs": true,                 // allow JS/JSX files
+    "checkJs": false,                 // disable strict checking for JS
+    "skipLibCheck": true,             // ignore type errors in node_modules
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Prevent Overwriting JS Files */
+    "noEmit": true,                   // don't output compiled files
+
+    /* Source Maps (optional) */
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],            // all files in src/
+  "exclude": ["node_modules", "dist"]
+}

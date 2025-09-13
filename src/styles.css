@@ -1,0 +1,168 @@
+/* styles.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e7f5ff, #cde9f9);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.App {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  animation: bounceIn 0.5s;
+  position: relative;
+  z-index: 1;
+  background-color: #ffffffaa;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+header button {
+  background: linear-gradient(45deg, #00a57a, #1de9b6);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+header button:hover {
+  background: #007e5d;
+  transform: scale(1.05);
+}
+
+.inventory {
+  margin-top: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.balls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ball {
+  background: linear-gradient(145deg, #dff5ea, #b9e8d7);
+  border: 2px solid #00a57a;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: grab;
+  font-size: 18px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  user-select: none;
+  position: relative;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.ball:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.ball:active {
+  transform: scale(0.95);
+}
+
+.character {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 300px;
+  transition: background 0.3s, transform 0.3s;
+  animation: fadeInCharacter 0.4s;
+  background: #ffffffee;
+}
+
+@keyframes fadeInCharacter {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.character.happy {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+
+.character.confused {
+  background-color: #ffeeba;
+  border-color: #ffc107;
+}
+
+.char-img {
+  font-size: 60px;
+  margin-bottom: 10px;
+  animation: pop 0.5s ease-in-out;
+  transition: transform 0.3s;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.leaderboard {
+  background: #fff;
+  padding: 15px;
+  margin: 30px auto;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.leaderboard h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #00a57a;
+}
+
+.leaderboard li {
+  list-style: none;
+  padding: 6px;
+  border-bottom: 1px dashed #ccc;
+  font-weight: bold;
+}
+
+.timer-bar {
+  height: 15px;
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.timer-bar-inner {
+  height: 100%;
+  background: linear-gradient(to right, #00a57a, #55e3bb);
+  transition: width 1s linear;
+}
