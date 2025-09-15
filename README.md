@@ -1,41 +1,38 @@
-# 🌄 Amazing View
+# 🌟 Amazing View – Dynamic Social Media Platform
 
-> A dynamic social media platform with an intuitive UI and seamless interactions.
-
-I'm thrilled to share **Amazing View**—my latest project! Built with React and Framer Motion, this platform delivers a smooth, modern experience with native drag-and-drop support and handy keyboard shortcuts.
+> I'm excited to share my latest project—a dynamic social media platform built with modern web technologies for a smooth and secure user experience.
 
 ---
 
 ## 🚀 Features
 
-- **Interactive UI**: Smooth animations and transitions with **Framer Motion**.
-- **Drag & Drop**: Native support for moving content effortlessly.
-- **Keyboard Shortcuts**: Navigate and control the platform efficiently.
-- **RESTful API Backend**: Full CRUD support with **Node.js** & **Express.js**.
-- **Database**: **MySQL** for reliable data storage.
-- **File Uploads**: **Multer** with robust validation + **FileReader API** for seamless file handling.
-- **Logging**: **Winston** for detailed and structured logs.
-- **Clean Architecture**: Atomic Design for maintainable, organized components.
-- **Performance & Security**: Optimized backend with attention to best practices.
+### Frontend
+- **⚛️ React & Framer Motion**: Smooth animations and responsive, intuitive UI.
+- **🖱️ Drag-and-Drop & ⌨️ Keyboard Shortcuts**: Effortless content management.
+- **✅ Real-Time Form Validation**: Implemented using **Formik** and **Yup**. Users get instant visual feedback: ✅ for valid input and ❌ for errors.
+- **🔒 Secure Navigation**: After OTP verification, sensitive data is passed securely via state objects and Maps instead of URL parameters.
+
+### Backend
+- **🟢 Node.js & Express.js**: Full RESTful API support (GET, POST, PUT, DELETE).
+- **🐬 MySQL Database**: Reliable data storage and retrieval.
+- **📁 Multer**: Handles file uploads with robust validation.
+- **🖼️ FileReader API**: Seamless client-side file handling.
+- **📜 Winston Logging**: Structured logging for monitoring and debugging.
+- **🛡️ Security Focused**: Optimized backend with best practices for performance and safety.
+
+### Authentication & Security
+- **📱 WhatsApp OTP via Twilio**: Two-factor authentication ensures secure user verification.
+- **🔐 Sensitive Data Protection**: User information remains hidden and secure during navigation.
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
-| Frontend       | Backend            | Database | Tools & Libraries       |
-|----------------|------------------|---------|------------------------|
-| React           | Node.js           | MySQL   | Framer Motion          |
-| HTML / CSS / JS | Express.js        |         | Multer                 |
-|                 | Winston           |         | FileReader API         |
-
----
-
-## 🎯 Highlights
-
-- Fully interactive and responsive design.
-- Optimized for performance and security.
-- Clean, modular, and maintainable codebase.
-- Easy file handling with drag-and-drop & upload validations.
-- Structured logging for debugging and monitoring.
+| Frontend                | Backend                  | Database       | Tools & Libraries        | Deployment          |
+|-------------------------|-------------------------|----------------|-------------------------|-------------------|
+| ⚛️ React                | 🟢 Node.js              | 🐬 MySQL       | 🎨 Framer Motion         | 🚀 Heroku         |
+| 💠 Formik & Yup         | Express.js              |                | 📁 Multer               |                   |
+| ⌨️ React Router DOM     | 📜 Winston              |                | 🖼️ FileReader API       |                   |
+|                         | 📲 Twilio               |                | 🔔 SweetAlert2          |                   |
 
 ---
